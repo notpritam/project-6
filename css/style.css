@@ -368,6 +368,7 @@ header .content{
 
 .services-card{
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 20px;
     padding: 2rem 4rem;
     display: flex;
@@ -408,11 +409,15 @@ header .content{
 
 
 
+html {
+    scroll-behavior: smooth;
+}
 
 
 
-
-
+section.active {
+    background-color: #ff9900;
+}
 
 
 
@@ -536,6 +541,9 @@ header{
     width: 50%;
     background-color: var(--primary-color);
 }
+.services-card{
+    background-color: white !important;
+}
 
 .contact-item{
 display: flex;
@@ -612,5 +620,22 @@ input{
 }
 
 input::placeholder {
-    color: #999; /* Replace with your desired color */
+    color: #999;
 }
+
+
+
+
+
+
+
+/* Responsive Code */
+
+
+@media only screen and (max-width: 768px) {
+   
+  }
+  
+  @media only screen and (max-width: 480px) {
+  }
+  
