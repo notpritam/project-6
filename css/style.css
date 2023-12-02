@@ -481,3 +481,9 @@ footer .content{
     text-align: center;
     gap: 1rem;
 }
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
