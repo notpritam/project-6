@@ -383,7 +383,16 @@ header .content{
 }
 
 .services-card button{
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
+    text-align: left;
     max-width: 200px;
     font-size: 18px;
+    border: none;
+    transition: all 0.3s ease;
+
+}
+.services-card button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    padding-left: 2rem;
 }
