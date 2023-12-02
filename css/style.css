@@ -624,7 +624,9 @@ input::placeholder {
 }
 
 
-
+.mobile-nav{
+    display: none;
+}
 
 
 
@@ -637,6 +639,9 @@ input::placeholder {
   }
   
   @media only screen and (max-width: 480px) {
+    .mobile-nav{
+        display: block;
+    }
 
     .content{
         display: flex;
@@ -645,13 +650,21 @@ input::placeholder {
     .hero img{
         width: 100%;
     }
+    .hero{
+        padding: 2rem 0;
+    }
+    .hero-content-section h1{
+        font-size: 2rem;
+    }
     .about-us-stats-contaainer{
         flex-direction: column;
         gap: 2rem;
     }
     .about-us-company{
         width: 100%;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
     .our-services-card-container{
         grid-template-columns: repeat(1, 1fr);
@@ -666,6 +679,98 @@ input::placeholder {
     .about-us-content{
         flex-direction: column;
     }
-    
+    .nav-links{
+        display: none;
+    }
+    .about-us-stats-contaainer img{
+        width: 100%;
+    }
+
+    header .title{
+        font-size: 2rem;
+        text-align: right;
+    }
+    header .content{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .cards-container .content{
+        position: relative;
+        top: 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cards-container .card{
+        padding: 0.5rem 1rem;
+        font-size: 18px;
+    }
+
+    .card h3{
+        font-size: 20px;
+    }
+
+    .about-us{
+        margin-top: 2rem;
+    }
+    .first-about-us-section .title{
+        font-size: 25px;
+    }
+    .about-us .content .title-div {
+        gap:0.5rem;
+    }
+    .about-us-content{
+        margin-top: 1rem;
+    }
+    .about-us-company{
+        margin-top: 1rem;
+    }
+    .about-us-company img{
+        height: 30px;
+    }
+    .call-to-action-video{
+        margin: 1rem 0;
+        border-radius: 0;
+        height: auto;
+    }
+    .call-to-action-video .content{
+        height: auto;
+        border-radius: 0;
+    }
+    .call-to-action-video .content img{
+        border-radius: 0;
+    }
+    .our-services{
+        padding: 1rem 0;
+    }
+    .our-services .content .title-div {
+        gap: 0.5rem;
+    }
+    .services-card{
+        padding: 0.5rem 1rem;
+    }
+    .form-div{
+        border-radius: 0;
+        gap: 0;
+    }
+    .site-details-footer{
+        width: 100%;
+    }
+    footer .content{
+        gap: 1rem;
+    }
+    footer{
+        padding: 0;
+    }
+    .footer-links-address{
+        width: 100%;
+    }
+    .copyright{
+        margin-bottom: 2rem;
+    }
+    .contact-us{
+        margin: 0;
+    }
   }
   
