@@ -637,5 +637,35 @@ input::placeholder {
   }
   
   @media only screen and (max-width: 480px) {
+
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero img{
+        width: 100%;
+    }
+    .about-us-stats-contaainer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .about-us-company{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .our-services-card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form-div{
+        flex-direction: column;
+    }
+    .contact-icon-container{
+        width: 100%;
+    }
+
+    .about-us-content{
+        flex-direction: column;
+    }
+    
   }
   
